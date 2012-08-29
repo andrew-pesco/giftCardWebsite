@@ -6,7 +6,7 @@
 		Print "</head>";
 		include 'header.php';
 		Print "<body>";
-			$giftCards = getUserGiftCards($_SESSION['username']);
+			$giftCards = getUserGiftCards($_COOKIE['user']);
  			Print "<ul class=\"thumbnails\">";
  			while ($giftCard = mysql_fetch_array($giftCards)){
 				$restaurantInfo = getRestaurantInfo($giftCard['store_id']);
@@ -27,7 +27,6 @@
 	}
 	
 		function buildGiftCardStore(){
-			session_start();
 			Print "<html>";
 			Print "<head>";
 				Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
