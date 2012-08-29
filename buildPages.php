@@ -1,9 +1,6 @@
 <?php	
 	function buildMyGiftCards(){
-		Print "hello";
-		if(session_id() != ""){
-			session_start();
-		}
+		@session_start();
 		Print "<html>";
 		Print "<head>";
 			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
@@ -31,6 +28,7 @@
 	}
 	
 		function buildGiftCardStore(){
+		@session_start();
 		Print "<html>";
 		Print "<head>";
 			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
