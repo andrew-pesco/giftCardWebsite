@@ -24,6 +24,7 @@
 		Print "</ul>";
 		Print "</body>";
 	    Print "</html>";
+	    session_write_close();
 	}
 	
 		function buildGiftCardStore(){
@@ -35,5 +36,6 @@
 		Print "<body>";
 		Print "</body>";
 	    Print "</html>";
+	    session_write_close();
 	}
 ?>
