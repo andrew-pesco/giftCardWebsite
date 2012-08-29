@@ -1,6 +1,7 @@
 <?php	
 	function buildMyGiftCards(){
-		if(session_status() == PHP_SESSION_ACTIVE){
+		Print session_id();
+		if(session_id() != ""){
 			session_start();
 		}
 		Print "<html>";
