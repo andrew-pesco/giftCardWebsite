@@ -34,8 +34,8 @@
 			include 'header.php';
 			Print "<body>";
 			Print "<div class=\"btn-group\">";
-				Print "<button class=\"btn btn-large\">".$defaultCollege."</button>";
-				Print "<button class=\"btn btn-large dropdown-toggle\" data-toggle=\"dropdown\">";
+				Print "<button class=\"btn">".$defaultCollege."</button>";
+				Print "<button class=\"btn dropdown-toggle\" data-toggle=\"dropdown\">";
 					Print "<span class=\"caret\"></span>";
 				Print "</button>";
 				Print "<ul class=\"dropdown-menu\">";
