@@ -1,6 +1,6 @@
 <?php	
 	function buildMyGiftCards(){
-		if(session_id() != ""){
+		if(session_id() == ""){
 			Print "there is a session";
 		}
 		Print "<html>";
