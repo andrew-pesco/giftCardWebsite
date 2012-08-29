@@ -4,7 +4,6 @@
 		if(isValidUser($_POST['email_address'],$_POST['password'])==true){
 			setcookie("user",$_POST['email_address'],time()+3600);
 			setcookie("password",$_POST['password'],time()+3600);
-			Print_r ($_COOKIE);
-			buildMyGiftCards();
+			include myGiftCards.php;
 		}
 	?>
