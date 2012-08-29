@@ -1,5 +1,9 @@
 <?php
 	include 'buildPages.php';
 	include 'databasefunctions.php';
-	buildGiftCardStore();
+	if(isset($_GET['college'])){
+		buildGiftCardStore($_GET['college']);
+	}else{
+		buildGiftCardStore('Harvard');
+	}
 ?>

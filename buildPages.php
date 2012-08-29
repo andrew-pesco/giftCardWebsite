@@ -26,13 +26,23 @@
 	    Print "</html>";
 	}
 	
-		function buildGiftCardStore(){
+		function buildGiftCardStore($defaultCollege){
 			Print "<html>";
 			Print "<head>";
 				Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
 			Print "</head>";
 			include 'header.php';
 			Print "<body>";
+			Print "<div class=\"btn-group\">";
+				Print "<button class=\"btn btn-large\">".$defaultCollege."</button>";
+				Print "<button class=\"btn btn-large dropdown-toggle\" data-toggle=\"dropdown\">";
+					Print "<span class=\"caret\"></span>";
+				Print "</button>";
+				Print "<ul class=\"dropdown-menu\">";
+					"<li><a href=\"giftCardStore.php?college=Columbia%20University\">Columbia University</a></li>";
+					"<li><a href=\"giftCardStore.php?college=Harvard\"></a>Harvard</li>";
+				Print "</ul>";
+			Print "</div>";
 			Print "</body>";
 	    	Print "</html>";
 		}
