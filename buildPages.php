@@ -6,6 +6,7 @@
 		Print "</head>";
 		include 'header.php';
 		Print "<body>";
+			Print $_SESSION['username'];
 			$giftCards = getUserGiftCards($_SESSION['username']);
  			Print "<ul class=\"thumbnails\">";
  			while ($giftCard = mysql_fetch_array($giftCards)){
@@ -24,7 +25,6 @@
 		Print "</ul>";
 		Print "</body>";
 	    Print "</html>";
-	    session_write_close();
 	}
 	
 		function buildGiftCardStore(){
@@ -36,6 +36,5 @@
 		Print "<body>";
 		Print "</body>";
 	    Print "</html>";
-	    session_write_close();
 	}
 ?>
