@@ -1,8 +1,5 @@
 <?php	
 	function buildMyGiftCards(){
-		if(session_id() == ""){
-			Print "there is a session";
-		}
 		Print "<html>";
 		Print "<head>";
 			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
