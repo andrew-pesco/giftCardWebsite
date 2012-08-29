@@ -15,7 +15,7 @@
  	if($result != 1){
  		return false;
  	}else{
- 		return true;
+ 		Print "worked";
  	}
  }
  
