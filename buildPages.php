@@ -1,8 +1,8 @@
 <?php	
 	function buildMyGiftCards(){
-		if(!empty(session_id()){
-			Print session_id();
-		{
+		if(session_id() != ""){
+			Print "there is a session";
+		}
 		Print "<html>";
 		Print "<head>";
 			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
@@ -30,14 +30,14 @@
 	}
 	
 		function buildGiftCardStore(){
-		session_start();
-		Print "<html>";
-		Print "<head>";
-			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
-		Print "</head>";
-		include 'header.php';
-		Print "<body>";
-		Print "</body>";
-	    Print "</html>";
-	}
+			session_start();
+			Print "<html>";
+			Print "<head>";
+				Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
+			Print "</head>";
+			include 'header.php';
+			Print "<body>";
+			Print "</body>";
+	    	Print "</html>";
+		}
 ?>
