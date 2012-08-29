@@ -1,6 +1,8 @@
 <?php	
 	function buildMyGiftCards(){
-		Print session_is_registered();
+		if(!empty(session_id()){
+			Print session_id();
+		{
 		Print "<html>";
 		Print "<head>";
 			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
