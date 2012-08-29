@@ -58,7 +58,7 @@
  	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
  	or die("oops something whent wrong");
  	mysql_select_db($mysql_database);
- 	$result = mysql_query("SELECT * FROM restaurants WHERE id = $store_id ");
+ 	$result = mysql_query("SELECT * FROM stores WHERE id = $store_id ");
  	return mysql_fetch_array($result);
  }
  
