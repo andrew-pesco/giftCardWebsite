@@ -15,15 +15,16 @@
  	if($result != 1){
  		return false;
  	}else{
- 		Print "worked";
+ 		return true;
  	}
  }
  
  function addUser($username, $password, $confirm_password){
- 	$mysql_hostname = "localhost";
- 	$mysql_user = "root";
- 	$mysql_password="pesco316";
- 	$mysql_database="discountWebsite";
+ 	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+ 	$mysql_hostname = $url["host"];;
+ 	$mysql_user = $url["user"];
+ 	$mysql_password= $url["pass"];
+ 	$mysql_database= substr($url["path"],1); 
  	$connection = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) 
  	or die("oops something whent wrong");
  	mysql_select_db($mysql_database);
@@ -36,10 +37,11 @@
  }
  
  function getUserGiftCards($username){
- 	$mysql_hostname = "localhost";
- 	$mysql_user= "root";
- 	$mysql_password="pesco316";
- 	$mysql_database="discountWebsite";
+ 	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+ 	$mysql_hostname = $url["host"];;
+ 	$mysql_user = $url["user"];
+ 	$mysql_password= $url["pass"];
+ 	$mysql_database= substr($url["path"],1); 
  	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
  	or die("oops something whent wrong");
  	mysql_select_db($mysql_database);
@@ -48,10 +50,11 @@
  }
  
  function getRestaurantInfo($store_id){
- 	$mysql_hostname = "localhost";
- 	$mysql_user= "root";
- 	$mysql_password="pesco316";
- 	$mysql_database="discountWebsite";
+ 	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+ 	$mysql_hostname = $url["host"];;
+ 	$mysql_user = $url["user"];
+ 	$mysql_password= $url["pass"];
+ 	$mysql_database= substr($url["path"],1); 
  	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
  	or die("oops something whent wrong");
  	mysql_select_db($mysql_database);
