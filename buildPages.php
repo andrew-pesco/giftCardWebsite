@@ -27,7 +27,6 @@
 	}
 	
 		function buildGiftCardStore(){
-		session_start();
 		Print "<html>";
 		Print "<head>";
 			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
