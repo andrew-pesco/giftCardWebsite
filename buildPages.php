@@ -35,28 +35,13 @@
 			Print "</head>";
 			include 'header.php';
 			Print "<body>";
-		//	Print  "<div class=\"btn-group\">";
-              //  Print"<button class=\"btn dropdown-toggle\" data-toggle=\"dropdown\">Action <span class=\"caret\"></span></button>";
-              //  Print "<ul class=\"dropdown-menu\">";
-              //    Print "<li><a href=\"#\">Action</a></li>";
-              //    Print "<li><a href=\"#\">Another action</a></li>";
-              //    Print "<li><a href=\"#\">Something else here</a></li>";
-              //    Print "<li class=\"divider\"></li>";
-              //    Print "<li><a href=\"#\">Separated link</a></li>";
-             // Print  "</ul>";
-            //  Print "</div>";
-			
-			
-			Print "<div class=\"btn-group\">";
-				Print "<button class=\"btn\">".$defaultCollege."</button>";
-				Print "<button class=\"btn dropdown-toggle\" data-toggle=\"dropdown\">";
-					Print "<span class=\"caret\"></span>";
-				Print "</button>";
-				Print "<ul class=\"dropdown-menu\">";
-					"<li><a href=\"giftCardStore.php?college=Columbia%20University\">Columbia University</a></li>";
-					"<li><a href=\"giftCardStore.php?college=Harvard\"></a>Harvard</li>";
-				Print "</ul>";
-			Print "</div>";
+			Print  "<div class=\"btn-group\">";
+                Print"<button class=\"btn dropdown-toggle\" data-toggle=\"dropdown\">".$defaultCollege."<span class=\"caret\"></span></button>";
+                Print "<ul class=\"dropdown-menu\">";
+                  Print "<li><a href=\"giftCardStore.php?college=Columbia%20University\">Columbia University</a></li>";
+                  Print "<li><a href=\"giftCardStore.php?college=Harvard\">Another action</a>Harvard</li>";
+             Print  "</ul>";
+             Print "</div>";
 			Print "</body>";
 	    	Print "</html>";
 		}
