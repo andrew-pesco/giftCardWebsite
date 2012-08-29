@@ -1,6 +1,5 @@
 <?php	
 	function buildMyGiftCards(){
-		session_start();
 		Print "<html>";
 		Print "<head>";
 			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
@@ -25,7 +24,6 @@
 		Print "</ul>";
 		Print "</body>";
 	    Print "</html>";
-		session_write_close();
 	}
 	
 		function buildGiftCardStore(){
@@ -38,7 +36,5 @@
 		Print "<body>";
 		Print "</body>";
 	    Print "</html>";
-	    session_write_close();
-
 	}
 ?>
