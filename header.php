@@ -1,4 +1,3 @@
-<html>
 	<div class="navbar">
 		<div class="navbar-inner">
 			<a class="brand" href="#">BREEZ</a>
@@ -8,4 +7,3 @@
 			</ul>
 		</div>
 	</div>
-</html>
