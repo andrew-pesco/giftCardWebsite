@@ -30,6 +30,8 @@
 			Print "<html>";
 			Print "<head>";
 				Print "<link href=\"twitter-bootstrap-320b75d/docs/assets/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
+				Print "<script type=\"text/javascript\" src=\"twitter-bootstrap-320b75d/docs/assets/js/jquery.js\"></script>"; 
+				Print "<script type=\"text/javascript\" src=\"twitter-bootstrap-320b75d/docs/assets/js/bootstrap-dropdown.js\"></script>"; 
 			Print "</head>";
 			include 'header.php';
 			Print "<body>";
