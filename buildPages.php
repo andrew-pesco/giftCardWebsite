@@ -1,6 +1,6 @@
 <?php	
 	function buildMyGiftCards(){
-		Print session_id();
+		Print "hello";
 		if(session_id() != ""){
 			session_start();
 		}
@@ -10,7 +10,6 @@
 		Print "</head>";
 		include 'header.php';
 		Print "<body>";
-			Print $_SESSION['username'];
 			$giftCards = getUserGiftCards($_SESSION['username']);
  			Print "<ul class=\"thumbnails\">";
  			while ($giftCard = mysql_fetch_array($giftCards)){
