@@ -2,7 +2,7 @@
 	function buildMyGiftCards(){
 		Print "<html>";
 		Print "<head>";
-			Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
+			Print "<link href=\"twitter-bootstrap-320b75d/docs/assets/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
 		Print "</head>";
 		include 'header.php';
 		Print "<body>";
@@ -29,8 +29,7 @@
 		function buildGiftCardStore($defaultCollege){
 			Print "<html>";
 			Print "<head>";
-				Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
-				Print "<script type=\"text/javascript\" src=\"bootstrap/js/bootstrap.js\"></script>";
+				Print "<link href=\"twitter-bootstrap-320b75d/docs/assets/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
 			Print "</head>";
 			include 'header.php';
 			Print "<body>";

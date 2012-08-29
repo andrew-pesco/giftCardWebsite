@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <title>BREEZ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="twitter-bootstrap-320b75d/docs/assets/css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
 <br />
