@@ -30,7 +30,7 @@
 			Print "<html>";
 			Print "<head>";
 				Print "<link href=\"bootstrap/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
-				Print "<script type=\"text/javascript\" src=\"http://twitter.github.com/bootstrap/assets/js/bootstrap-dropdown.js\"></script>";
+				Print "<script type=\"text/javascript\" src=\"bootstrap/js/bootstrap.js\"></script>";
 			Print "</head>";
 			include 'header.php';
 			Print "<body>";
