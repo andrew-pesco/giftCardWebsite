@@ -39,7 +39,7 @@
                 Print"<button class=\"btn dropdown-toggle\" data-toggle=\"dropdown\">".$defaultCollege."<span class=\"caret\"></span></button>";
                 Print "<ul class=\"dropdown-menu\">";
                   Print "<li><a href=\"giftCardStore.php?college=Columbia%20University\">Columbia University</a></li>";
-                  Print "<li><a href=\"giftCardStore.php?college=Harvard\">Another action</a>Harvard</li>";
+                  Print "<li><a href=\"giftCardStore.php?college=Harvard\">Harvard</a></li>";
              Print  "</ul>";
              Print "</div>";
 			Print "</body>";
