@@ -2,8 +2,8 @@
 		include 'databasefunctions.php';
 		include 'buildPages.php';
 		if(isValidUser($_POST['email_address'],$_POST['password'])==true){
-			Print "hello";
 			$college=$getCollege($_POST['email_address']);
+			Print $college['college'];
 			setcookie("user",$_POST['email_address'],time()+3600);
 			setcookie("password",$_POST['password'],time()+3600);
 			setcookie("college",$college['college'],time()+3600);
