@@ -72,5 +72,6 @@
  	or die("oops something went wrong");
  	mysql_select_db($mysql_database);
  	$result = mysql_query("SELECT * FROM collegeStores WHERE collegeName='$college'");
+ 	return $result;
  }
 ?>
