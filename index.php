@@ -35,6 +35,9 @@
 						Print "<li><a>".$college['collegeName']."</a></li>";
 					}
 				?>
+			</ul>
+			</div>
+			<br />
 		<input class="span3" type="text" name="email_address" placeholder="email address"/><br />
 		<input class = "span3" type="password" name="password" placeholder="password" />
 		<input class = "span3" type="password" name="confirm_password" placeholder="confirm password" />
