@@ -83,6 +83,7 @@
  }
  
    function getCollege($username){
+ 	Print "hello";
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
  	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
@@ -91,7 +92,6 @@
  	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
  	or die("oops something went wrong");
  	mysql_select_db($mysql_database);
- 	Print "hello";
  	$result = mysql_query("SELECT * FROM users WHERE email='$username'");
  	return mysql_fetch_array($result);
  }
