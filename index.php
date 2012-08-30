@@ -29,15 +29,15 @@
 	<form method="post" action = "newuser.php">
 		<label>New To BREEZ.  Sign Up.</label>
 		<input class="span3" type="text" name="full_name" placeholder="full name"/>
-			<ul class="dropdown-menu" name="college">;
+			<select name="college">;
 				<?php
 					include 'databasefunctions.php';
 					$colleges = getColleges();
 					while($college=mysql_fetch_array($colleges)){
-						Print "<li><a>".$college['collegeName']."</a></li>";
+						Print "<option value=".$college['collegeName']."</option>";
 					}
 				?>
-			</ul>
+			</select>
 		<input class="span3" type="text" name="email_address" placeholder="email address"/><br />
 		<input class = "span3" type="password" name="password" placeholder="password" />
 		<input class = "span3" type="password" name="confirm_password" placeholder="confirm password" />
