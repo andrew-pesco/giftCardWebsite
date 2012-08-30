@@ -42,6 +42,7 @@
                   Print "<li><a href=\"giftCardStore.php?college=Harvard\">Harvard</a></li>";
              Print  "</ul>";
              Print "</div>";
+             print "<br />";
 			$stores = getStoresNearCollege($defaultCollege);
 			while($store = mysql_fetch_array($stores)){
 				$restaurantInfo = getRestaurantInfo($store['store_id']);
