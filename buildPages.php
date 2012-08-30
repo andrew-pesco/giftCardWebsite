@@ -45,6 +45,8 @@
 			 Print $defaultCollege;
 			$stores = getStoresNearCollege($defaultCollege);
 			while($store = mysql_fetch_array($stores)){
+				Print "hello";
+				Print $store['store_id'];
 				$restaurantInfo = getRestaurantInfo($store['store_id']);
 				Print "<li class=\"well span4\">";
 							Print "<div href=\"#\" class=\"thumbnail\">";
