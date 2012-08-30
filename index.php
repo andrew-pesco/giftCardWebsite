@@ -25,9 +25,19 @@
 <div class="well">
 	<form method="post" action = "newuser.php">
 		<label>New To BREEZ.  Sign Up.</label>
+		<input class="span3" type="text" name="full_name" placeholder="full name"/>
+		<div class="btn-group">
+			<button class="btn dropdown-toggle" data-toggle=dropdown">college<span class="caret"></span></button>
+			<ul class="dropdown-menu" name="college">;
+				<?php
+					$colleges = getColleges();
+					while($college=mysql_fetch_array($colleges)){
+						Print "<li><a>".$college['collegeName']."</a></li>";
+					}
+				?>
 		<input class="span3" type="text" name="email_address" placeholder="email address"/><br />
 		<input class = "span3" type="password" name="password" placeholder="password" />
-		<input class = "span2" type="password" name="confirm_password" placeholder="confirm password" />
+		<input class = "span3" type="password" name="confirm_password" placeholder="confirm password" />
 		<input type="Submit" class= "btn btn-success" value="Sign up" style="height: 38px; width: 80 margin-top: 4000px" />
 	</form>
 </div>

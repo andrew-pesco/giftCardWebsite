@@ -74,4 +74,19 @@
  	$result = mysql_query("SELECT * FROM collegeStores WHERE collegeName='$college'");
  	return $result;
  }
+ 
+  function getColleges($college){
+ 	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+ 	$mysql_hostname = $url["host"];;
+ 	$mysql_user = $url["user"];
+ 	$mysql_password= $url["pass"];
+ 	$mysql_database= substr($url["path"],1); 
+ 	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
+ 	or die("oops something went wrong");
+ 	mysql_select_db($mysql_database);
+ 	$result = mysql_query("SELECT DISTINCT collegeName FROM collegeStores");
+ 	return $result;
+ }
+ 
+ 
 ?>
