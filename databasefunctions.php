@@ -28,7 +28,7 @@
  	$connection = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) 
  	or die("oops something went wrong");
  	mysql_select_db($mysql_database);
- 	if(strcmp(trim($password), trim($confirm_password))==0){
+ 	if(strcmp(trim($password), trim($confirm_password))==0){x
  		mysql_query("INSERT INTO users VALUES ('$username', '$password')");
  		Print "User Added";
  	}else{
