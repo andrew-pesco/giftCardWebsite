@@ -83,7 +83,6 @@
  }
  
    function getCollege($username){
- 	Print "hello";
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
  	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
