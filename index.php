@@ -33,6 +33,7 @@
 			<button class="btn dropdown-toggle" data-toggle=dropdown">college<span class="caret"></span></button>
 			<ul class="dropdown-menu" name="college">;
 				<?php
+					include 'databasefunctions.php';
 					$colleges = getColleges();
 					while($college=mysql_fetch_array($colleges)){
 						Print "<li><a>".$college['collegeName']."</a></li>";
