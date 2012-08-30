@@ -19,7 +19,7 @@
  	}
  }
  
- function addUser($username, $password, $confirm_password){
+ function addUser($username, $password, $confirm_password,$college){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
  	$mysql_hostname = $url["host"];;
  	$mysql_user = $url["user"];
@@ -28,12 +28,7 @@
  	$connection = mysql_connect($mysql_hostname, $mysql_user, $mysql_password) 
  	or die("oops something went wrong");
  	mysql_select_db($mysql_database);
- 	if(strcmp(trim($password), trim($confirm_password))==0){
- 		mysql_query("INSERT INTO users VALUES ('$username', '$password')");
- 		Print "User Added";
- 	}else{
- 		Print "The passwords do not match";
- 	}
+ 	mysql_query("INSERT INTO users VALUES ('$username', '$password','$college')");
  }
  
  function getUserGiftCards($username){
@@ -75,7 +70,7 @@
  	return $result;
  }
  
-  function getColleges($college){
+  function getColleges(){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
  	$mysql_hostname = $url["host"];;
  	$mysql_user = $url["user"];
@@ -86,6 +81,19 @@
  	mysql_select_db($mysql_database);
  	$result = mysql_query("SELECT DISTINCT collegeName FROM collegeStores");
  	return $result;
+ }
+ 
+   function getCollege($username){
+ 	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+ 	$mysql_hostname = $url["host"];;
+ 	$mysql_user = $url["user"];
+ 	$mysql_password= $url["pass"];
+ 	$mysql_database= substr($url["path"],1); 
+ 	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
+ 	or die("oops something went wrong");
+ 	mysql_select_db($mysql_database);
+ 	$result = mysql_query("SELECT college FROM users WHERE email='$username'");
+ 	return mysql_fetch_array($result);
  }
  
  

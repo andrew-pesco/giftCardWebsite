@@ -2,8 +2,10 @@
 		include 'databasefunctions.php';
 		include 'buildPages.php';
 		if(isValidUser($_POST['email_address'],$_POST['password'])==true){
+			$college=$getCollege($_POST['email_address'])
 			setcookie("user",$_POST['email_address'],time()+3600);
 			setcookie("password",$_POST['password'],time()+3600);
+			setcookie("college",$college['college'],time()+3600);
 			Print "<html>";
 			Print "<head>";
 				Print "<link href=\"twitter-bootstrap-320b75d/docs/assets/css/bootstrap.userpage.css\" rel=\"stylesheet\">";

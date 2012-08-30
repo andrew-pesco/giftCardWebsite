@@ -30,7 +30,7 @@
 		<label>New To BREEZ.  Sign Up.</label>
 		<input class="span3" type="text" name="full_name" placeholder="full name"/>
 			<select name="college">;
-				<option value="">College</option>
+				<option value="">college</option>
 				<?php
 					include 'databasefunctions.php';
 					$colleges = getColleges();
