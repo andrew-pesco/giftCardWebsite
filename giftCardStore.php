@@ -4,6 +4,6 @@
 	if(isset($_GET['college'])){
 		buildGiftCardStore($_GET['college']);
 	}else{
-		buildGiftCardStore('Harvard');
+		buildGiftCardStore('Columbia University');
 	}
 ?>
