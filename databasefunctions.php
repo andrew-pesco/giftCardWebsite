@@ -11,7 +11,6 @@
  	mysql_select_db($mysql_database); 	
  	$get = mysql_query("SELECT count(*) FROM users WHERE email = '$username' and password = '$password'");	
  	$result = mysql_result($get, 0);
- 	
  	if($result != 1){
  		return false;
  	}else{
