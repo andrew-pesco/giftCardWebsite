@@ -5,6 +5,9 @@
 <title>BREEZ</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="twitter-bootstrap-320b75d/docs/assets/css/bootstrap.css" rel="stylesheet">
+<script type="text/javascript" src="twitter-bootstrap-320b75d/docs/assets/js/jquery.js"></script>
+<script type="text/javascript" src="twitter-bootstrap-320b75d/docs/assets/js/bootstrap-dropdown.js"></script>
+
 </head>
 <body>
 <br />
@@ -36,8 +39,7 @@
 					}
 				?>
 			</ul>
-			</div>
-			<br />
+		</div>
 		<input class="span3" type="text" name="email_address" placeholder="email address"/><br />
 		<input class = "span3" type="password" name="password" placeholder="password" />
 		<input class = "span3" type="password" name="confirm_password" placeholder="confirm password" />
