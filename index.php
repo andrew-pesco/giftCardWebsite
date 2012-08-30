@@ -34,7 +34,7 @@
 					include 'databasefunctions.php';
 					$colleges = getColleges();
 					while($college=mysql_fetch_array($colleges)){
-						Print "<option value=".$college['collegeName']."</option>";
+						Print "<option value=\"".$college['collegeName']."\">".$college['collegeName']."</option>";
 					}
 				?>
 			</select>
