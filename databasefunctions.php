@@ -2,7 +2,7 @@
  
  function isValidUser($username, $password){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
- 	$mysql_hostname = $url["host"];;
+ 	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
  	$mysql_password= $url["pass"];
  	$mysql_database= substr($url["path"],1); 	
@@ -20,7 +20,7 @@
  
  function addUser($username, $password, $confirm_password,$college){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
- 	$mysql_hostname = $url["host"];;
+ 	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
  	$mysql_password= $url["pass"];
  	$mysql_database= substr($url["path"],1); 
@@ -32,7 +32,7 @@
  
  function getUserGiftCards($username){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
- 	$mysql_hostname = $url["host"];;
+ 	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
  	$mysql_password= $url["pass"];
  	$mysql_database= substr($url["path"],1); 
@@ -45,7 +45,7 @@
  
  function getRestaurantInfo($store_id){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
- 	$mysql_hostname = $url["host"];;
+ 	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
  	$mysql_password= $url["pass"];
  	$mysql_database= substr($url["path"],1); 
@@ -58,7 +58,7 @@
  
  function getStoresNearCollege($college){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
- 	$mysql_hostname = $url["host"];;
+ 	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
  	$mysql_password= $url["pass"];
  	$mysql_database= substr($url["path"],1); 
@@ -71,7 +71,7 @@
  
   function getColleges(){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
- 	$mysql_hostname = $url["host"];;
+ 	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
  	$mysql_password= $url["pass"];
  	$mysql_database= substr($url["path"],1); 
@@ -84,13 +84,14 @@
  
    function getCollege($username){
  	$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
- 	$mysql_hostname = $url["host"];;
+ 	$mysql_hostname = $url["host"];
  	$mysql_user = $url["user"];
  	$mysql_password= $url["pass"];
  	$mysql_database= substr($url["path"],1); 
  	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
  	or die("oops something went wrong");
  	mysql_select_db($mysql_database);
+ 	Print "hello";
  	$result = mysql_query("SELECT * FROM users WHERE email='$username'");
  	return mysql_fetch_array($result);
  }
