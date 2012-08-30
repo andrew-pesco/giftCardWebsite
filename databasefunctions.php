@@ -91,7 +91,7 @@
  	$connection= mysql_connect($mysql_hostname, $mysql_user, $mysql_password)
  	or die("oops something went wrong");
  	mysql_select_db($mysql_database);
- 	$result = mysql_query("SELECT college FROM users WHERE email='$username'");
+ 	$result = mysql_query("SELECT * FROM users WHERE email='$username'");
  	return mysql_fetch_array($result);
  }
  
