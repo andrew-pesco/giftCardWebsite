@@ -10,7 +10,16 @@
 			Print "<head>";
 				Print "<link href=\"twitter-bootstrap-320b75d/docs/assets/css/bootstrap.userpage.css\" rel=\"stylesheet\">";
 			Print "</head>";
-			include 'header.php';
+			Print"<div class=\"navbar\">";
+			Print "<div class=\"navbar-inner\">";
+			Print "<a class=\"brand\">BREEZ</a>";
+			Print "<ul class=\"nav\">";
+				Print "<li class=\"active\"><a href=\"myGiftCards.php\">My Gift Cards</a></li>";
+				Print "<li><a href=\"giftCardStore.php\">Gift Card Store</a><li>";
+				Print "<li><a href=\"logout.php\">Sign Out</a></li>";
+			Print "</ul>";
+		Print "</div>";
+		Print "</div>";
 			Print "<body>";
 				$giftCards = getUserGiftCards($_POST['email_address']);
  				Print "<ul class=\"thumbnails\">";

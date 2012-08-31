@@ -13,7 +13,6 @@
 			Print "</ul>";
 		Print "</div>";
 		Print "</div>";
-		include 'header.php';
 		Print "<body>";
 			$giftCards = getUserGiftCards($_COOKIE['user']);
  			Print "<ul class=\"thumbnails\">";
