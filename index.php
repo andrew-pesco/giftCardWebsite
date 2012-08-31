@@ -51,7 +51,6 @@
 <div class = "row">
 <div class = "span4 offset1">
 <p>
-<strong><font size=+1>Welcome to BREEZ<br />BREEZ is a mobile gift card platform on which you can buy, store and use gift cards at your favorite restaurants and retailers.</font></strong>
 </p>
 </div>
 </div>
